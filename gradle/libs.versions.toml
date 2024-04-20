@@ -44,15 +44,6 @@ mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mo
 mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref= "mockitoKotlinVersion"}
 
 
-#// Optional -- Mockito framework
-#  testImplementation "org.mockito:mockito-core:$mockitoVersion"
-#  // Optional -- mockito-kotlin
-#  testImplementation "org.mockito.kotlin:mockito-kotlin:$mockitoKotlinVersion"
-#  // Optional -- Mockk framework
-#  testImplementation "io.mockk:mockk:$mockkVersion"
-
-# testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.0"
-
 kotlinx-coroutines-test = {group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test",version.ref = "kotlinxcoroutineTest"}
 
 
