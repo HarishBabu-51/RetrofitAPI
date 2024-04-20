@@ -58,4 +58,14 @@ dependencies {
     implementation(libs.glide.glide)
     annotationProcessor(libs.glide.compiler)
 
+    //mockito
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.kotlin)
+
+    //core-testing
+    testImplementation(libs.androidx.core.testing)
+
+    //kotlin-coroutine-test
+    testImplementation(libs.kotlinx.coroutines.test)
+
 }

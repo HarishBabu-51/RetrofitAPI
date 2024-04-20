@@ -1,4 +1,4 @@
-package com.example.retrofitapi
+package com.example.retrofitapi.fox
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -15,5 +15,5 @@ class FoxRepository {
         foxService = retrofit.create(FoxService::class.java)
     }
 
-    suspend fun getRandomFox(): Fox = foxService.getRandomFox()
+    fun getRandomFox(): Fox = foxService.getRandomFox()
 }

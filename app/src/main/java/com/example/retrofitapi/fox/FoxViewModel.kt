@@ -1,4 +1,4 @@
-package com.example.retrofitapi
+package com.example.retrofitapi.fox
 
 import android.util.Log
 import androidx.lifecycle.LiveData
@@ -7,8 +7,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 
-class FoxViewModel : ViewModel() {
-    private val repository = FoxRepository()
+class FoxViewModel(private val repository: FoxRepository) : ViewModel() {
+   // private val repository = FoxRepository()
     private val _foxResponse = MutableLiveData<Fox?>()
     val foxResponse: LiveData<Fox?> get() = _foxResponse
 

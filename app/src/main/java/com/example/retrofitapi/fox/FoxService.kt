@@ -1,8 +1,8 @@
-package com.example.retrofitapi
+package com.example.retrofitapi.fox
 
 import retrofit2.http.GET
 
 interface FoxService {
     @GET("floof/")
-    suspend fun getRandomFox(): Fox
+    fun getRandomFox(): Fox
 }
